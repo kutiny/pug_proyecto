@@ -1,0 +1,42 @@
+extends ../templates/template
+block append config
+  - pagina_actual = "destinos";
+  - page_title = "Destinos";
+
+block destinos_elegidos
+  .destinos_elegidos
+    h1.destinos__title DESTINOS DISPONIBLES
+    .destinos__item
+      img.destinos__img(src="/res/destinos/destino1.jpg", alt="Imagen Ejemplo")
+      .destinos__item__description
+        h1.destinos__item__title LOREM IPSUM DOLOR.
+        p.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.
+        a.destinos__button(href="#") Comprar
+
+    .destinos__item
+      img.destinos__img(src="/res/destinos/destino2.jpg", alt="Imagen Ejemplo")
+      .destinos__item__description
+        h1.destinos__item__title LOREM IPSUM DOLOR.
+        p.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.
+        a.destinos__button(href="#") Comprar
+    .destinos__item
+      img.destinos__img(src="/res/destinos/destino3.jpg", alt="Imagen Ejemplo")
+      .destinos__item__description
+        h1.destinos__item__title LOREM IPSUM DOLOR.
+        p.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.
+        a.destinos__button(href="#") Comprar
+
+    .destinos__item
+      img.destinos__img(src="/res/destinos/destino4.jpg", alt="Imagen Ejemplo")
+      .destinos__item__description
+        h1.destinos__item__title LOREM IPSUM DOLOR.
+        p.destinos__item_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.
+        a.destinos__button(href="#") Comprar
+
+block opcion
+  .banner__opcion
+    img.banner__opcion__img(src="/res/destinos/elegir.jpg", alt="Mapa")
+    .banner__texto
+      h1.banner__opcion__title ELIGE TU DESTINO, NOSOTROS TE LLEVAMOS
+      p.banner__opcion__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt ex. Cras venenatis, mauris a dignissim vulputate, ex risus hendrerit sapien, sed dignissim mi.
+      a.banner__opcion__btn(href="#") BUSCAR DESTINO

@@ -1,0 +1,70 @@
+.paquete {
+  background: $bg-packs;
+  padding: 1em;
+  min-width: 40%;
+  margin: 1em;
+}
+
+.paquetes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.none {
+  list-style: none;
+}
+.pack {
+  &_name,
+  &_dest,
+  &_act,
+  &_price{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &_name{
+    color: $destino;
+    font-size: 1.125rem;
+    margin: .5em auto;
+  }
+  &_dest {
+    color: $destino;
+    font-size: 1.625rem;
+  }
+  &_act {
+    margin: .25em 0;
+  }
+  &_price {
+    color: $c-principal;
+    font-weight: bold;
+    font-size: 1.325rem;
+    margin: .25em;
+  }
+  &_buy {
+    text-decoration: none;
+    color: $c-principal;
+    background: #FFF;
+    padding: .5em 1em;
+    margin: 1em auto .25em;
+    display: table;
+    transition: all .3s ease-out;
+    &:hover {
+      color: #FFF;
+      background: $c-principal;
+    }
+  }
+}
+
+.create_pack {
+  text-decoration: none;
+  color: #FFF;
+  background: $c-principal;
+  padding: .5em 1em;
+  font-size: 1.625rem;
+  display: table;
+  margin: .5em auto 1em;
+}
+
+.paquetes__title {
+  text-align: center;
+  margin: .5em 0 .25em;
+}

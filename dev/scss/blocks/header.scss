@@ -1,0 +1,33 @@
+.header {
+  padding: 0 1em;
+  background: $c-principal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+}
+
+.page__title {
+  color: #FFF;
+}
+
+.page_home {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  &__item{
+    padding: .5em 1em;
+    margin: 0 .5em;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: color .3s ease-out;
+    &:hover {
+      color: lighten($c-principal,10);
+    }
+  }
+}

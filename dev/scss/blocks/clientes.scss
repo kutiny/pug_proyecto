@@ -1,0 +1,45 @@
+.clientes {
+  margin: 1em;
+  &__title {
+    margin: 2em 0 1em;
+    text-align: center;
+  }
+  &__comentarios {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.comentario {
+  margin: 1em 0;
+  background: $c-principal;
+  display: flex;
+  padding: 1em;
+  &__persona {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    &__imagen {
+      height: 100px;
+      border-radius: 50px;
+      margin-bottom: .5em;
+    }
+    &__nombre {
+      text-align: center;
+      color: #FFF;
+    }
+  }
+  &__contenido {
+    margin-left: 2em;
+    .stars {
+      display: flex;
+      margin-bottom: 1em;
+      .star {
+        width: 25px;
+      }
+    }
+    .text {
+      color: #FFF;
+    }
+  }
+}

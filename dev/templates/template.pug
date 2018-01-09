@@ -1,0 +1,23 @@
+doctype html
+html
+  block config
+    include ../config/config
+  head
+    meta(charset="utf-8")
+    block head
+      title= page_title + " | " + page
+      each link in css
+        link(rel="stylesheet" href='css/' + link)
+  body
+    block header
+      include ../blocks/header.pug
+    block banner
+      img.banner__img(src="/res/banners/" + pagina_actual + ".jpg", alt="Banner")
+    block nosotros
+    block destinos_elegidos
+    block paquetes
+    block contacto
+    block opcion
+    block clientes
+    block footer
+      include ../blocks/footer.pug

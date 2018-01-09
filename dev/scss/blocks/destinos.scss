@@ -1,0 +1,47 @@
+.destinos {
+  
+  &_elegidos {
+    margin: 2em auto 0;
+    padding: 0 1em;
+  }
+  &__title {
+    color: #000;
+    text-align: center;
+    margin: 2em 0 1em;
+  }
+  &__item {
+    margin: 1em 0;
+    display: flex;
+    width: 100%;
+    border: 1px solid $c-principal;
+    &:nth-child(odd){
+      .destinos__img {
+        order: 2;
+      }
+      .destinos__button {
+        align-self: flex-start;
+      }
+    }
+    &__description {
+      margin: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 1.1rem;
+      margin: 0 0 1em;
+    }
+  }
+  &__img {
+    width: 350px;
+  }
+  &__button {
+    align-self: flex-end;
+    background: $c-principal;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: auto;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+}

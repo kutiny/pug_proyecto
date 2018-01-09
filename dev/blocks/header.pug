@@ -1,0 +1,8 @@
+header.header
+  a.page_home(href="/"): h1.page__title #{page}
+  nav.menu
+    each item in paginas
+      if item === "inicio"
+        a.menu__item(href="/") #{item}
+      else
+        a.menu__item(href=item + ".html") #{item}

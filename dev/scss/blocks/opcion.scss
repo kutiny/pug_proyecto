@@ -1,0 +1,45 @@
+.banner {
+  &__texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: 1.5em;
+  }
+  &__opcion {
+    display: flex;
+    position: relative;
+    margin: 2em auto 1em;
+    padding: 0 1em;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      background: $c-principal;
+      z-index: -1;
+    }
+    &__title {
+      color: #FFF;
+      text-align: center;
+    }
+    &__text {
+      color: #FFF;
+    }
+    &__btn {
+      background: #000;
+      color: #FFF;
+      text-decoration: none;
+      padding: .5em 1em;
+      align-self: flex-end;
+      margin-top: auto;
+      margin-bottom: 3em;
+    }
+    &__img {
+      min-width: 250px;
+      max-width: 250px;
+    }
+  }
+  
+}

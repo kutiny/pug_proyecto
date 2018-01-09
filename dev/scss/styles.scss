@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+@import "blocks/variables.scss";
+@import "blocks/header.scss";
+@import "blocks/banner.scss";
+@import "blocks/nosotros.scss";
+@import "blocks/destinos.scss";
+@import "blocks/opcion.scss";
+@import "blocks/packs.scss";
+@import "blocks/contacto.scss";
+@import "blocks/clientes.scss";
+@import "blocks/footer.scss"

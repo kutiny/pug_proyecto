@@ -1,0 +1,19 @@
+.contacto__title {
+  text-align: center;
+  margin: 1em 0 .5em;
+}
+
+.social {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: nowrap;
+  margin: 0 auto 1em;
+  &__item {
+    width: 80px;
+    margin: 0 1em;
+  }
+}
+
+.leyenda {
+  margin: 0 1em;
+}
