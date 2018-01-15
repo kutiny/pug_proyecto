@@ -1,8 +1,8 @@
+.foo{background: #272727;}
 .footer {
   width: 100%;
-  background: #272727;
   color: #95989A;
-  height: 196px;
+  height: 10em;
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -10,5 +10,8 @@
   margin-top: auto;
   &__name {
     text-transform: uppercase;
+  }
+  @media screen and (max-width: 500px){
+    flex-direction: column;
   }
 }

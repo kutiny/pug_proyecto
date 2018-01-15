@@ -5,18 +5,19 @@ block append config
   - pagina_actual = "paquetes";
 
 block paquetes
-  h1.paquetes__title PAQUETES DISPONIBLES
-  .paquetes
-    - for(let i = 0 ; i < 4 ; i++ )
-        .paquete
-          ul.none
-            li.pack_name PACK 1
-            li.pack_dest DESTINO
-            li.pack_act lorem ipsum
-            li.pack_act lorem ipsum
-            li.pack_act lorem ipsum
-            li.pack_act lorem ipsum
-            li.pack_act lorem ipsum
-            li.pack_price u$s 150
-            li.pack_button: a.pack_buy(href="#") COMPRAR
-  a.create_pack(href="#") CREA TU PACK
+  .max
+    h1.paquetes__title PAQUETES DISPONIBLES
+    .paquetes
+      - for(let i = 0 ; i < 4 ; i++ )
+          .paquete
+            ul.none
+              li.pack_name PACK 1
+              li.pack_dest DESTINO
+              li.pack_act lorem ipsum
+              li.pack_act lorem ipsum
+              li.pack_act lorem ipsum
+              li.pack_act lorem ipsum
+              li.pack_act lorem ipsum
+              li.pack_price u$s 150
+              li.pack_button: a.pack_buy(href="#") COMPRAR
+    a.create_pack(href="#") CREA TU PACK

@@ -31,6 +31,15 @@
       font-size: 1.1rem;
       margin: 0 0 1em;
     }
+    &_text {
+      margin-bottom: 1em;
+    }
+    @media screen and (max-width: 640px){
+      flex-direction: column;
+      .destinos__img {
+        width: 100%;
+      }
+    }
   }
   &__img {
     width: 350px;

@@ -13,7 +13,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
+}
+.max {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @import "blocks/variables.scss";
 @import "blocks/header.scss";

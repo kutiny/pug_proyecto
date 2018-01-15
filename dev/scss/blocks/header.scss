@@ -1,6 +1,20 @@
-.header {
-  padding: 0 1em;
+.cabecera {
   background: $c-principal;
+}
+.dn {
+  display: none;
+  opacity: 0;
+  &:checked ~ .menu {
+    left: 0;
+  }
+  &:checked + label {
+    &::before {
+      content: "Cerrar";
+    }
+  }
+}
+.header {
+  padding: 0 1em; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +29,18 @@
   text-decoration: none;
   color: #FFF;
 }
-
+.btn_menu {
+  display: none;
+  cursor: pointer;
+  color: #FFF;
+  &::before {
+    display: table;
+    content: 'Menú';
+  }
+  @media screen and (max-width: 640px){
+    display: block;
+  }
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -25,9 +50,25 @@
     color: #FFF;
     text-decoration: none;
     text-transform: capitalize;
-    transition: color .3s ease-out;
+    transition: color .5s;
+    transition-timing-function: cubic-bezier(.17,.67,.56,.95);
     &:hover {
       color: lighten($c-principal,10);
+    }
+  }
+  @media screen and (max-width: 640px){
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    padding-top: 4em;
+    left: -70%;
+    height: 100vh;
+    background: $c-principal;
+    width: 70%;
+    transition: all .3s;
+    &__item {
+      padding: 1em 0;
+      border-bottom: 1px solid rgba(#000,.2);
     }
   }
 }
