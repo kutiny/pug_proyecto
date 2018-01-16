@@ -17,7 +17,7 @@
   &__texto {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 5em;
     margin-left: 1.5em;
   }
   &__opcion {
@@ -46,12 +46,13 @@
       padding: .5em 1em;
       align-self: flex-end;
       margin-top: auto;
-      margin-bottom: 3em;
+      margin-bottom: 4em;
     }
     &__img {
       margin: auto;
       min-width: 250px;
-      max-width: 250px;
+      max-width: 350px;
+      max-height: 350px;
     }
   }
   
